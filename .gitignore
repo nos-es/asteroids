@@ -30,3 +30,4 @@ dist/
 
 #log file
 game_state.jsonl
+game_events.jsonl
