@@ -1,5 +1,7 @@
 # Asteroids
 
+![Asteroids gameplay](assets/asteroids-demo.gif)
+
 A small Asteroids-style game written in Python using Pygame.
 
 The player controls a ship, avoids incoming asteroids, and can shoot them. When a shot hits an asteroid, the asteroid splits or disappears. If the player collides with an asteroid, the game ends.
