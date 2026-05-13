@@ -1,6 +1,6 @@
 import pygame
 import sys
-from constants import SCREEN_HEIGHT, SCREEN_WIDTH
+from constants import SCREEN_HEIGHT, SCREEN_WIDTH, ASTEROID_KILL_SCORE
 from logger import log_state, log_event
 from player import Player
 from asteroid import Asteroid
@@ -48,7 +48,7 @@ def main():
                 if asteroid.collides_with(shot):
                     log_event("asteroid_shot")
                     asteroid.split()
-                    score.update(50)
+                    score.update(ASTEROID_KILL_SCORE)
                     shot.kill()
         pygame.display.flip()
 
